@@ -24,7 +24,8 @@ const storyItems = [
     icon: Gift,
     title: "Many More to Come",
     date: "Forever",
-    description: "Looking forward to creating endless memories together.",
+    description:
+      "Neeyse yanaku kidacha periya Gift . Andha gift yanaku mattum irrukanum",
   },
 ];
 
