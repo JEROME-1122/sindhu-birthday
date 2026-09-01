@@ -12,7 +12,7 @@ function Navbar() {
           For You <span className="text-[#ff4f9b]">♥</span>
         </div>
 
-        <div className="hidden items-center gap-10 md:flex">
+        <div className=" items-center gap-10 md:flex">
           {links.map((link) => (
             <a
               key={link}
