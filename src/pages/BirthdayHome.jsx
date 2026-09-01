@@ -8,7 +8,7 @@ import FinalBirthday from "../components/FinalBirthday";
 function BirthdayHome() {
   return (
     <main className="page-enter min-h-screen overflow-hidden">
-      <Navbar />
+    
 
       <Hero />
 

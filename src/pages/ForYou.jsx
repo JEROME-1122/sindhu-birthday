@@ -7,6 +7,8 @@ import ProposalAnimation from "../components/ProposalAnimation";
 
 import heroImage from "../assets/couple-img.png";
 
+import birthdayVideo from "../assets/videos/birthday-video.mp4";
+
 function ForYou() {
   const [videoStarted, setVideoStarted] = useState(false);
   const [videoEnded, setVideoEnded] = useState(false);
@@ -189,9 +191,9 @@ function ForYou() {
                 controls
                 playsInline
                 onEnded={handleVideoEnd}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain object-center"
               >
-                <source src="/videos/birthday-video.mp4" type="video/mp4" />
+                <source src={birthdayVideo} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             )}
