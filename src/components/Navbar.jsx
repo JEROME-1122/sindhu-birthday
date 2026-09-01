@@ -31,7 +31,7 @@ function Navbar() {
           </NavLink> */}
           <button
             onClick={() => navigate("/for-you")}
-            className="right-0 md:right-auto rounded-full bg-gradient-to-r from-[#ff4a91] to-[#ff619f] px-7 py-3 text-sm font-bold text-white shadow-[0_0_25px_rgba(255,75,150,0.35)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(255,75,150,0.55)]"
+            className="right-0 md:right-auto foryou-btn rounded-full bg-gradient-to-r from-[#ff4a91] to-[#ff619f] px-7 py-3 text-sm font-bold text-white shadow-[0_0_25px_rgba(255,75,150,0.35)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(255,75,150,0.55)]"
           >
             For You ❤️
           </button>
