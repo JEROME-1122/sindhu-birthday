@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <header className="absolute left-0 top-0 z-50 w-full">
-      <nav className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 lg:px-10">
+      <nav className="mx-auto md:flex max-w-[1400px] items-center justify-between px-6 py-4 lg:px-10">
         <div className="logo-font text-3xl text-white">
           For You <span className="text-[#ff4f9b]">♥</span>
         </div>
