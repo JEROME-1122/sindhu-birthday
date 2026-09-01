@@ -12,12 +12,12 @@ function Navbar() {
           For You <span className="text-[#ff4f9b]">♥</span>
         </div>
 
-        <div className=" items-center justify-between gap-10 flex flex-wrap">
+        <div className=" items-center justify-between gap-10 mdflex flex-wrap">
           {links.map((link) => (
             <a
               key={link}
               href={`#${link.toLowerCase().replace(" ", "-")}`}
-              className="text-sm font-semibold text-white/90 transition-colors duration-300 hover:text-[#ff5b9f]"
+              className="text-sm md:mr-0 mr-10 font-semibold text-white/90 transition-colors duration-300 hover:text-[#ff5b9f]"
             >
               {link}
             </a>
