@@ -4,7 +4,7 @@ import Stars from "./Stars";
 import heroImage from "../assets/hero-couple.png";
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
-function Hero({ onOpenStory }) {
+function Hero() {
   const [showStory, setShowStory] = useState(false);
   const [displayText, setDisplayText] = useState("");
 
@@ -154,13 +154,68 @@ Thanagmaeeeeeeee NAMA KALYANAM PANNIKALAMAAA   💞💞💞💞💞  NEEE yanaku
 
           {/* Button */}
           <button
-            onClick={onOpenStory}
+            onClick={() => setShowStory(true)}
             className="mt-8 rounded-xl bg-gradient-to-r from-[#ff3f86] to-[#ff619f] px-7 py-4 font-bold text-white shadow-[0_0_30px_rgba(255,63,134,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_45px_rgba(255,63,134,0.6)]"
           >
-            Enga Start pannomnu Pakalama 🎉
+            Enga Start pannomnu paakuriya 🎉
           </button>
         </div>
 
+        {showStory && (
+          <div
+            className="fixed inset-0 z-[999999] flex items-center justify-center bg-black/80 px-5 backdrop-blur-md"
+            onClick={() => setShowStory(false)}
+          >
+            {/* Popup */}
+            <div
+              className="relative z-10 w-full max-w-[700px] max-h-[85vh] overflow-hidden rounded-[28px] border border-pink-400/30 bg-[#10051f] p-7 shadow-[0_0_80px_rgba(255,50,140,0.5)] sm:p-10"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Glow */}
+              <div className="pointer-events-none absolute left-1/2 top-0 h-[250px] w-[400px] -translate-x-1/2 rounded-full bg-pink-500/10 blur-[100px]" />
+
+              {/* Close button */}
+              <button
+                onClick={() => setShowStory(false)}
+                className="absolute right-5 top-5 z-50 flex h-10 w-10 items-center justify-center rounded-full border border-pink-400/20 bg-white/5 text-white/70 transition hover:bg-pink-500/20 hover:text-white"
+              >
+                <X size={20} />
+              </button>
+
+              {/* Header */}
+              <div className="relative z-10 text-center">
+                <div className="mb-4 text-4xl">💕</div>
+
+                <p className="script-font text-2xl text-[#ff5b9f]">
+                  Our Beginning
+                </p>
+
+                <h2 className="mt-2 text-3xl font-bold text-white sm:text-4xl">
+                  Enga Start Pannom? ❤️{" "}
+                  <span> but kadaisi varaikum read pannu </span>
+                </h2>
+
+                <div className="mx-auto mt-5 h-px w-24 bg-gradient-to-r from-transparent via-[#ff4f9b] to-transparent" />
+              </div>
+
+              {/* Typing text */}
+              <div className="relative z-10 mt-7 max-h-[50vh] overflow-y-auto rounded-2xl border border-white/5 bg-white/[0.03] p-6 text-left">
+                <p className="whitespace-pre-line text-[15px] leading-8 text-white/85 sm:text-base">
+                  {displayText}
+
+                  <span className="ml-1 inline-block h-5 w-[2px] translate-y-1 animate-pulse bg-[#ff5b9f]" />
+                </p>
+              </div>
+
+              {/* Bottom */}
+              <div className="relative z-10 mt-6 text-center">
+                <p className="script-font text-xl text-[#ff72a9]">
+                  And our story is still being written... ❤️
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
         {/* =================================
             RIGHT SIDE
         ================================= */}
