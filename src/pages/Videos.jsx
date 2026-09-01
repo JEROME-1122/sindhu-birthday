@@ -31,7 +31,7 @@ function Videos() {
           </div>
         </nav>
       </header>
-      <VideoMemories />
+      {/* <VideoMemories /> */}
     </div>
   );
 }
