@@ -1,5 +1,5 @@
 import React from "react";
-import VideoMemories from "../components/VideoMemories";
+// import VideoMemories from "../components/VideoMemories";
 import { ChevronDown, Heart, Play } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
