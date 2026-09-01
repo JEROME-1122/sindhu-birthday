@@ -23,12 +23,12 @@ function Navbar() {
             </a>
           ))}
 
-          <NavLink
+          {/* <NavLink
             to="/videos"
             className="text-sm font-semibold text-white/90 transition-colors duration-300 hover:text-[#ff5b9f]"
           >
             Videos
-          </NavLink>
+          </NavLink> */}
           <button
             onClick={() => navigate("/for-you")}
             className="rounded-full bg-gradient-to-r from-[#ff4a91] to-[#ff619f] px-7 py-3 text-sm font-bold text-white shadow-[0_0_25px_rgba(255,75,150,0.35)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_35px_rgba(255,75,150,0.55)]"
